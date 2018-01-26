@@ -1,98 +1,97 @@
 var CODES = {
 //hello
 "Hello" : `/*
-Neche UrduScript likhen.
-Code chalane k liye Run pe click karen.
+Be FarsiScript khosh amadid!
 */
 
-likho("Salam, Dunya")
+chaap("Salam, Dunya")
 `,
 // var
 "Variable": `// declare variable
-rakho naam = "Ali"
+motaghayer naam = "Emran"
 
 // output to screen
-likho(naam)
+chaap(naam)
 `,
 
 // foreach
 "ForEach": `// variable
-rakho list = ["Ahmed", "Sara", "Qasim"]
+motaghayer list = ["Ahmad", "Sara", "Emran"]
 
 // foreach loop. Iterate over 'list' array
-har list k naam per{
+baraye list k naam per{
   // output to screen
-  likho(naam)
+  chaap(naam)
 }
 `,
 
 // if-else
 "If-Else": `// declare variable
-rakho naam = "Asad"
+motaghayer naam = "Emran"
 
 // if else
 agar (naam){
-  likho("Salam, " + naam)
+  chaap("Salam, " + naam)
 }
 warna {
-  likho("Naam khali hai")
+  chaap("Naam khali ast!")
 }
 `,
 
 // prompt
 "Prompt/GetLine": `//prompt: ask for input from user
-rakho naam = pucho("Apna naam likhen")
+motaghayer naam = darkhast("Naame khod ra vared konid")
 
 // if else
 agar (naam){
-  likho("Salam, " + naam)
+  chaap("Salam, " + naam)
 }
 warna {
-  likho("Naam khali hai")
+  chaap("Naam khali ast!")
 }
 `,
 
 // function
-"Function": `// function is 'kaam'
-kaam salaam(naam){
+"Function": `// function is 'tabe'
+tabe salaam(naam){
 	agar (naam){
-    likho("Salam, " + naam)
+    chaap("Salam, " + naam)
   }
   warna {
-    likho("Naam khali hai")
+    chaap("Naam khali ast!")
   }
 }
 
 // calling function
-salaam("Asad")
+salaam("Emran")
 `,
 
 "While": `// declare a variable
-rakho a = 10
+motaghayer a = 10
 
 // while is 'jabtak'
-jabtak( a>0 ){
-	likho(a)
+tavaghti( a>0 ){
+	chaap(a)
 	a--
 }
 `,
 "Do-While":`// ask age until given
-karo{
-  age = pucho("Apni age likhen")
+bokon{
+  age = darkhast("Senne khod ra vared konid")
 }
-jabtak(!age)
-likho("Apki age " + age + " hai")
+tavaghti(!age)
+chaap("Senne shoma: " + age + " ast.")
 `,
 "Recursion(Fibonacci)": `// recursive function
-kaam fibonacci(num) {
+tabe fibonacci(num) {
 	// base case
-  agar (num <= 1) bhejo 1;
+  agar (num <= 1) bede 1;
 	
 	// recursion
-  bhejo fibonacci(num - 1) + fibonacci(num - 2);
+  bede fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-likho(fibonacci(5))
+chaap(fibonacci(5))
 `
 
 }
