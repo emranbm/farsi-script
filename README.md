@@ -1,28 +1,30 @@
-# UrduScript
+# FarsiScript
 
-![](docs/head.png?raw=true)
+FarsiScript is a [Persian](http://www.urbandictionary.com/define.php?term=Persian) dialect of JavaScript. The goal is to make programming more accessible to beginners from South-West Asia (No! I was kidding :) it's just for fun!). FarsiScript uses informal Persian analogies to programming concepts, making it easy to get started without remembering keywords.
 
-UrduScript is an [Urdish](http://www.urbandictionary.com/define.php?term=Urdish) dialect of JavaScript. The goal is to make programming more accessible to beginners from South Asia. UrduScript uses informal Urdu analogies to programming concepts, making it easy to get started without remembering keywords.
+Thanks a lot to [UrduScript](https://github.com/asadm/urduscript)
 
-UrduScript transpiles to JavaScript. All JavaScript frameworks (like jQuery, UnderScore, React, etc) can be seemlessly used.
+It's highly suggested not to use this programming language for beginners.
+
+FarsiScript transpiles to JavaScript. All JavaScript frameworks (like jQuery, UnderScore, React, etc) can be seemlessly used.
 
 ### Hello World
 
 ```js
 // declare variable
-rakho naam = "Asad"
+motaghayer naam = "Asad"
 
 // output to console
-likho("Hello, " + naam)
+chaap("Salam, " + naam)
 ```
 
-[**Try it online here**](https://asadmemon.com/urduscript/editor/).
+[**Try it online here**](https://dongap.com:3030)
 
 ### Installation (Web Editor)
 If you want to run the web editor offline. Follow these steps:
 
 ##### Prerequisites:
-In order to run UrduScript on your computer, you need to install [Node.js](https://nodejs.org/en/download/) first. 
+In order to run FarsiScript on your computer, you need to install [Node.js](https://nodejs.org/en/download/) first. 
 ##### Installing (Windows):
 
 - Download zip or clone the repository
@@ -66,3 +68,7 @@ This is a open project and I am open to all ideas and improvements. See [this pa
 - Project is only possible due to [Sweet.js](https://github.com/sweet-js/sweet-core).
 - The online editor uses the wonderful [CodeMirror](https://github.com/codemirror/CodeMirror).
 - Special thanks to Ali Alavi, Osman Mian, Eric Bhatti for their help.
+
+### Appreciation
+
+Again, Thanks a lot to [UrduScript](https://github.com/asadm/urduscript)
