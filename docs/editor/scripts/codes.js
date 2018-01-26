@@ -4,7 +4,7 @@ var CODES = {
 Be FarsiScript khosh amadid!
 */
 
-chaap("Salam, Dunya")
+chaap("Salam, Donya!")
 `,
 // var
 "Variable": `// declare variable
