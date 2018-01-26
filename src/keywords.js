@@ -75,7 +75,7 @@ export syntax chaap = ctx => #`console.log ${ctx.next().value}`
 export syntax _testAlert = ctx => #`alert ${ctx.next().value}`
 
 // prompt (only works on browser right now)
-export syntax pucho = ctx => #`prompt ${ctx.next().value}`
+export syntax darkhast = ctx => #`prompt ${ctx.next().value}`
 
 // function
 export syntax tabe = function (ctx) {
@@ -110,7 +110,7 @@ export syntax baraye = function (ctx) {
 }
 
 // return
-export syntax bargardan = ctx => #`return ${ctx.next().value}`;
+export syntax bede = ctx => #`return ${ctx.next().value}`;
 
 //do while
 export syntax bokon = function(ctx) {
