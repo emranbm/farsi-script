@@ -18,7 +18,7 @@ motaghayer naam = "Asad"
 chaap("Salam, " + naam)
 ```
 
-[**Try it online here**](https://dongap.com:3030)
+[**Try it online here**](http://dongap.com:3030)
 
 ### Installation (Web Editor)
 If you want to run the web editor offline. Follow these steps:
