@@ -59,17 +59,17 @@ export syntax agar = function (ctx) {
 }
 
 // var
-export syntax rakho = ctx => #`var`
+export syntax motaghayer = ctx => #`var`
 
 // while
-export syntax jabtak = function (ctx) {
+export syntax tavaghti = function (ctx) {
     let wparam = ctx.next().value
     let wblock = ctx.next().value;
     return #`while ${wparam} ${wblock}`;
 }
 
 // console.log
-export syntax likho = ctx => #`console.log ${ctx.next().value}`
+export syntax chaap = ctx => #`console.log ${ctx.next().value}`
 
 // alert
 export syntax _testAlert = ctx => #`alert ${ctx.next().value}`
@@ -78,7 +78,7 @@ export syntax _testAlert = ctx => #`alert ${ctx.next().value}`
 export syntax pucho = ctx => #`prompt ${ctx.next().value}`
 
 // function
-export syntax kaam = function (ctx) {
+export syntax tabe = function (ctx) {
 	let fname = ctx.next().value
 	let fparam = ctx.next().value
 	let fblock = ctx.next().value;
@@ -86,7 +86,7 @@ export syntax kaam = function (ctx) {
 }
 
 // for and foreach loop
-export syntax har = function (ctx) {
+export syntax baraye = function (ctx) {
 	let fparam = ctx.next().value
 	
 	if (fparam.type==="RawSyntax"){
@@ -110,25 +110,25 @@ export syntax har = function (ctx) {
 }
 
 // return
-export syntax bhejo = ctx => #`return ${ctx.next().value}`;
+export syntax bargardan = ctx => #`return ${ctx.next().value}`;
 
 //do while
-export syntax karo = function(ctx) {
+export syntax bokon = function(ctx) {
 	let dblock = ctx.next().value;
 	let jabtak = ctx.next();
 	if(jabtak.value != null){
-		if(jabtak.value.value.token.value === "jabtak"){
+		if(jabtak.value.value.token.value === "tavaghti"){
 		//console.log(jabtak.value.value.token.value);
 		let jabtakparams = ctx.next().value;
 		return #`do ${dblock} while ${jabtakparams}`;
 		} else {
-			return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
+			return #`console.log("khata: 'bokon' bayad 'tavaghti' dashte bashad.")`;
 		}
 	} else {
-		return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
+		return #`console.log("khata: 'bokon' khaali ast.")`;
 	}
 
 }
 
 // break
-export syntax rukjao = (ctx) => #`break`;
+export syntax beshkan = (ctx) => #`break`;

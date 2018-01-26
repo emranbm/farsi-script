@@ -69,7 +69,7 @@ export syntax jabtak = function (ctx) {
 }
 
 // console.log
-export syntax likho = ctx => #`console.log ${ctx.next().value}`
+export syntax chaap = ctx => #`console.log ${ctx.next().value}`
 
 // alert
 export syntax _testAlert = ctx => #`alert ${ctx.next().value}`
@@ -127,8 +127,7 @@ export syntax karo = function(ctx) {
 	} else {
 		return #`console.log("galti: karo ke liye jabtak hona lazmi hai!")`;
 	}
-	
-	
+
 }
 
 // break
